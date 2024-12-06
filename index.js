@@ -13,7 +13,7 @@ const endpoint = process.env.OPENAI_API_ENDPOINT;
 const modelName = "gpt-4o";
 
 // Multer setup for file uploads
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: '/tmp/uploads/' });
 
 const app = express();
 app.use(cors());
