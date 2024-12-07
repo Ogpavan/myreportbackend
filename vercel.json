@@ -1,16 +1,9 @@
 {
     "version": 2,
     "builds": [
-        { "src": "./index.js", "use": "@vercel/node" }
+      { "src": "./index.js", "use": "@vercel/node" }
     ],
-    "functions": {
-        "index.js": {
-            "includeFiles": [
-                "node_modules/tesseract.js-core/tesseract-core-simd.wasm"
-            ]
-        }
-    },
     "routes": [
-        { "src": "/(.*)", "dest": "/" }
+      { "src": "/(.*)", "dest": "/" }
     ]
-}
+  }
