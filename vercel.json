@@ -3,14 +3,14 @@
     "builds": [
         { "src": "./index.js", "use": "@vercel/node" }
     ],
-    "routes": [
-        { "src": "/(.*)", "dest": "/" }
-    ],
     "functions": {
         "index.js": {
             "includeFiles": [
                 "node_modules/tesseract.js-core/tesseract-core-simd.wasm"
             ]
         }
-    }
+    },
+    "routes": [
+        { "src": "/(.*)", "dest": "/" }
+    ]
 }
