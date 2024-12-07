@@ -13,5 +13,11 @@
       },
       "dest": "/"
     }
+  ],
+   "assets": [
+    {
+      "src": "node_modules/tesseract.js-core/tesseract-core-simd.wasm",
+      "dest": "node_modules/tesseract.js-core/tesseract-core-simd.wasm"
+    }
   ]
 }
